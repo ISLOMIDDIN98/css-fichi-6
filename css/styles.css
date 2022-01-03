@@ -48,3 +48,83 @@ height: auto;
 .main-content{
   flex-grow: 1;
 }
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(142, 235, 215);
+
+}
+
+.envelope{
+  position: relative;
+  width: 200px;
+  height: 110px;
+}
+
+.envelope-top{
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 100%;
+  transition: 0.2s;
+  transform: translateY(-100%);
+  transform-origin: bottom;
+}
+
+.envelope-body{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.paper{
+  font-size: 18px;
+font-weight: bold;
+width: 100px;
+height: 65px;
+color: rgb(41, 6, 241);
+text-align: center;
+position: absolute;
+left: 50%;
+margin-left: -50px;
+transform: translateY(-40px);
+transition: 0.2s;
+bottom: 15px;
+}
+
+.envelope-top-close{
+transform: translateY(-110%) rotateX(180deg);
+z-index: 2;
+}
+
+.paper-close{
+
+  bottom: -28px;
+  color: rgb(224, 32, 6);
+}
+
+
+
+
+
+
+
+
+
+.top-img{
+  background-color: transparent;
+  width: 140px;
+  height: 80px;
+}
+
+
+.img-bottom{
+  width: 300px;
+  height: 150px;
+
+}
